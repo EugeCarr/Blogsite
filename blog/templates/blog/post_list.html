@@ -16,10 +16,10 @@
         </header>
         <main>            
             {% for post in posts %}
-                <article>
-                    <time>published: {{ post.published_date }}</time>
+                <article class="post">                    
                     <h2><a href="">{{ post.title }}</a></h2>
                     <p>{{ post.text|linebreaksbr }}</p>
+                    <time>published: {{ post.published_date }}</time>
                 </article>
             {% endfor %}
 
